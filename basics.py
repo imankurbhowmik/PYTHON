@@ -77,11 +77,65 @@ print("Done")
 
 # exercise
 weight  = float(input("Enter weight : "))
-unit = input("(K)g or (L)bs")
+unit = input("(K)g or (L)bs ")
 
-if(unit.upper() == "K") :
+if unit.upper() == "K" :
     converted = weight / 0.45
     print("Weight in lbs is : " + str(converted))
 else :
     converted = weight * 0.45
     print("Weight in kg is : " + str(converted))
+
+# while loops
+i=1
+while i<=5 :
+    print(i)
+    i = i + 1
+
+i=1
+while i<=5 :
+    print(i * '*')
+    i = i + 1
+
+
+# lists
+names = ["Ankur", "Hehe"]
+print(names)
+print(names[0])
+print(names[-2])
+names[0] = "jon"
+print(names[0:3])
+
+numbers = [1, 3, 4, 6, 7 , 0]
+numbers.append(9)
+print(numbers)
+numbers.insert(0, -1)
+numbers.remove(4)
+numbers.clear()
+print(1 in numbers)
+print(len(numbers))
+
+# for loops
+for item in numbers:
+    print(item)
+
+j = 0
+while j < len(numbers) :
+    print(numbers[j])
+    j = j+1
+
+
+# range function
+nums = range(5)
+nums2 = range(5,10)
+nums3 = range(5, 10, 2)
+print (nums)
+
+for numbers in nums:
+    print(numbers)
+
+
+# tuples
+integers = (1, 2, 3, 3)
+print(integers.count(3))
+print(integers.index(1))
